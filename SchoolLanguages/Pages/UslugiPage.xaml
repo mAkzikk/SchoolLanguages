@@ -1,0 +1,42 @@
+﻿<Page x:Class="SchoolLanguages.Pages.UslugiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SchoolLanguages.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UslugiPage" Background="{StaticResource BaseBrush}">
+    <Grid>
+        <DockPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" DockPanel.Dock="Top" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <TextBlock Style="{DynamicResource TextBlock}" Text="Сортировка: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <ComboBox x:Name="SortComboBox" Width="180" SelectionChanged="SortComboBox_SelectionChanged" FontFamily="Comic Sans MS" BorderBrush="{StaticResource AccentBrush}">
+                    <ComboBoxItem Content="По цене (возрастание)" FontFamily="Comic Sans MS" />
+                    <ComboBoxItem Content="По цене (убывание)" FontFamily="Comic Sans MS"  />
+                    <ComboBoxItem Content="По длительности (возрастание)" FontFamily="Comic Sans MS" />
+                    <ComboBoxItem Content="По длительности (убывание)" FontFamily="Comic Sans MS" />
+                </ComboBox>
+            </StackPanel>
+            <ListBox x:Name="ServiceList" Margin="20">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Background="White">
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <Image Source="{Binding GetPhoto}" Width="100" Height="100" Margin="0,0,10,0"/>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{Binding Наименование}" Style="{DynamicResource TextBlock}" FontWeight="Bold" FontSize="16"/>
+                                    <TextBlock Text="{Binding Описание}" Style="{DynamicResource TextBlock}" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                                    <TextBlock Text="{Binding Стоимость}" Style="{DynamicResource TextBlock}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Продолжительность, StringFormat='Длительность: {0} мин.'}" Style="{DynamicResource TextBlock}"/>
+                                </StackPanel>
+                                <Button x:Name="EditButton" Content="Записаться" Click="EditButton_Click"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button x:Name="EditButton" Content="Записаться" Click="EditButton_Click"/>
+        </DockPanel>
+    </Grid>
+</Page>

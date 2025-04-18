@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="646fc604d743437183639681c9f8c658" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="SchoolLanguagesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Авторизация" Width="1.5" PointX="19.375" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Доп_фото_товар" Width="1.5" PointX="9.125" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Доп_фото_услуг" Width="1.5" PointX="17" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Записи" Width="1.5" PointX="14.375" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.История_заказов" Width="1.5" PointX="11.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Категория_сотрудников" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Категория_товаров" Width="1.5" PointX="1.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Клиент" Width="1.5" PointX="16.875" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Комплект" Width="1.5" PointX="9" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Рабочее_время_сотрудника" Width="1.5" PointX="16.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Результат_предоставления_услуги" Width="1.5" PointX="17" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Сезон" Width="1.5" PointX="2.375" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Сезонные_товары" Width="1.5" PointX="2.125" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Склад" Width="1.5" PointX="4.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Сотрудники" Width="1.5" PointX="12.875" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Статус_услуги" Width="1.5" PointX="12.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Тип_клиента" Width="1.5" PointX="19.125" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Товар" Width="1.5" PointX="7.875" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Услуги" Width="1.5" PointX="14.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolLanguagesModel.Скан_предоставления_услуги" Width="1.5" PointX="13.25" PointY="13.375" IsExpanded="true" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Клиент_Авторизация" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Доп_фото_товар_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Доп_фото_услуг_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Записи_Клиент" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Записи_Статус_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Записи_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_История_заказов_Предоставления_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Результат_предоставления_услуги_Записи" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Скан_предоставления_услуги_Предоставления_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_История_заказов_Комплект" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="SchoolLanguagesModel.FK_История_заказов_Статус_услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_История_заказов_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Сотрудники_Категория_сотрудников" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Товар_Категория_товаров" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Клиент_Тип_клиента" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Комплект_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Комплект_Товар1" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Рабочее_время_сотрудника_Сотрудники" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Рабочее_время_сотрудника_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Сезонные_товары_Сезон" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Сезонные_товары_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolLanguagesModel.FK_Товар_Склад" ManuallyRouted="false" >
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

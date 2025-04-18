@@ -1,0 +1,23 @@
+﻿<Window x:Class="SchoolLanguages.Windows.SotrudnikWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolLanguages.Windows"
+        mc:Ignorable="d"
+        Title="SotrudnikWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name = "Yprysl" Content="Управление услугами" Click="Yprysl_Click" Style="{DynamicResource Button}" Margin="10,20,10,20" />
+            <Button x:Name = "YprTov" Content="Управление товарами" Click="YprTov_Click" Style="{DynamicResource Button}" Margin="10,10,10,20" />
+            <Button x:Name = "Zapnaysl" Content="Запись на услуги" Click="Zapnaysl_Click" Style="{DynamicResource Button}" Margin="10,10,10,20"/>
+            <Button x:Name = "BlizZap" Content="Ближайшие записи" Click="BlizZap_Click" Style="{DynamicResource Button}" Margin="10,10,10,20" />
+            <Button x:Name = "Historyzak" Content="История заказов" Click="Historyzak_Click"  Style="{DynamicResource Button}" Margin="10,10,10,20"/>
+        </StackPanel>
+        <Frame x:Name="SotFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

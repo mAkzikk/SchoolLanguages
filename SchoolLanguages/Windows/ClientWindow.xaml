@@ -1,0 +1,24 @@
+﻿<Window x:Class="SchoolLanguages.Windows.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolLanguages.Windows"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="450" Width="800" Background="{StaticResource BaseBrush}" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="5">
+            <Button x:Name="Yslyg" Content="Услуги" Style="{DynamicResource Button}" Click="Yslyg_Click" Margin="10,20,10,20"/>
+            <Button x:Name="Tovary" Content="Товары" Style="{DynamicResource Button}" Click="Tovary_Click" Margin="10,10,10,20"/>
+            <Button  x:Name="Zapisnaysl" Content="Запись на услугу" Style="{DynamicResource Button}" Click="Zapisnaysl_Click" Margin="10,10,10,20"/>
+            <Button  x:Name="Myzapis" Content="Мои записи" Style="{DynamicResource Button}" Click="Myzapis_Click" Margin="10,10,10,20"/>
+            <Button  x:Name="Profil" Content="Профиль" Style="{DynamicResource Button}" Click="Profil_Click" Margin="10,10,10,20"/>
+        </StackPanel>
+        <Frame Grid.Column="1" x:Name="ClientFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
