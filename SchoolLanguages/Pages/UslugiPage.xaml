@@ -18,11 +18,11 @@
                     <ComboBoxItem Content="По длительности (убывание)" FontFamily="Comic Sans MS" />
                 </ComboBox>
             </StackPanel>
-            <ListBox x:Name="ServiceList" Margin="20">
+            <ListBox x:Name="ServiceList" Margin="20" d:ItemsSource="{d:SampleData ItemCount=5}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10" Background="White">
-                            <StackPanel Orientation="Horizontal" Margin="5">
+                        <Border Background="#E7FABF" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10">
+                            <StackPanel Orientation="Horizontal" Margin="5" Background="Transparent">
                                 <Image Source="{Binding GetPhoto}" Width="100" Height="100" Margin="0,0,10,0"/>
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Text="{Binding Наименование}" Style="{DynamicResource TextBlock}" FontWeight="Bold" FontSize="16"/>
@@ -30,7 +30,7 @@
                                     <TextBlock Text="{Binding Стоимость}" Style="{DynamicResource TextBlock}" FontWeight="Bold"/>
                                     <TextBlock Text="{Binding Продолжительность, StringFormat='Длительность: {0} мин.'}" Style="{DynamicResource TextBlock}"/>
                                 </StackPanel>
-                                <Button x:Name="EditButton" Content="Записаться" Click="EditButton_Click"/>
+                                <Button x:Name="EditButton" Style="{DynamicResource Button}" Content="Записаться" Click="EditButton_Click" Height="30"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>

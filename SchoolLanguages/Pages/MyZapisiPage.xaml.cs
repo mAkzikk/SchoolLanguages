@@ -24,6 +24,7 @@ namespace SchoolLanguages.Pages
         public MyZapisiPage()
         { 
             InitializeComponent();
+            //
         }
       
     }

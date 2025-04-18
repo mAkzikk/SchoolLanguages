@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <DataGrid x:Name="ClientsDataGrid" AutoGenerateColumns="False" IsReadOnly="True"
-                  SelectionMode="Single" Margin="0 0 0 10">
+                  SelectionMode="Single" Margin="0 0 0 10" RowBackground="#E7FABF" d:ItemsSource="{d:SampleData ItemCount=5}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}"/>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Имя}" />
